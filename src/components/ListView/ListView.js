@@ -24,7 +24,7 @@ function BizCard(props) {
       onClick={() => setSelectedMarkerId(biz.id)}
     >
       <h4>{biz.name}</h4>
-      <p className="address">{biz.location.display_address.join(", ")}</p>
+      <p className="address">{biz.location.display_address ? biz.location.display_address.join(", ") : ""}</p>
       <p className="rating">Rating: {biz.rating}</p>
       <p className="status">Status: {biz.is_closed ? "Closed" : "Open"}</p>
     </div>

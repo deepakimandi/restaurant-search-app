@@ -16,6 +16,13 @@ async function loadBiz(loc) {
       .toString();
   console.log("url", url)
   var resp = await  axios.get(url);
+  var biz = []
+  for(let i = 0; i < resp.data.biz.length; i++) {
+    if(resp.data.biz[i].coordinates.latitude && resp.data.biz[i].coordinates.longitude) {
+      biz.push(resp.data.biz[i]);
+    }
+  }
+  resp.data.biz = biz;
   if (resp.status === 200) {
     return {status: STATUS.SUCC,
             biz: resp.data.biz};
