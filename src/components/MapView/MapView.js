@@ -26,8 +26,8 @@ const MapView = React.memo((props) => {
                                             );
     const apparentHeightOfMap = window.innerHeight;
     const globalHeightOfMap = window.google.maps.geometry.spherical.computeDistanceBetween(
-                                              {lat: map.getBounds().Va.hi, lng: loc.lng}, 
-                                              {lat: map.getBounds().Va.lo, lng: loc.lng}
+                                              {lat: map.getBounds().Vh.hi, lng: loc.lng}, 
+                                              {lat: map.getBounds().Vh.lo, lng: loc.lng}
                                             );
     const apparentDistanceBtwMarkers = (globalDistanceBtwMarkers * apparentHeightOfMap) / globalHeightOfMap;
     if(apparentDistanceBtwMarkers < 20) // measure of size of the marker image used
