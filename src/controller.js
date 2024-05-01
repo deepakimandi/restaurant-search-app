@@ -9,7 +9,7 @@ const STATUS = {
 
 
 async function loadBiz(loc) {
-  var url = URI("http://localhost:3002/yelp-query")
+  var url = URI("https://restaurant-search-app.onrender.com/yelp-query")
       .search({latitude: loc.lat,
                longitude: loc.lng,
                term:"food"})

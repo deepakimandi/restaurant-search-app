@@ -48,3 +48,6 @@
 * Feel free to define any new state or effects needed
 * Do not remove the throttling in the backend, if needed simulate the call by replacing the `axios` http call with previously captured data
 * Keys are defined in `constants.js`
+
+### Deployement
+* The application is deployed and accessible at https://66327e39dfce33ac507d6d23--meek-gecko-e726dc.netlify.app/
