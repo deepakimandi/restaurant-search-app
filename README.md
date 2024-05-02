@@ -50,4 +50,4 @@
 * Keys are defined in `constants.js`
 
 ### Deployement
-* The application is deployed and accessible at https://66327e39dfce33ac507d6d23--meek-gecko-e726dc.netlify.app/
+* The application is deployed and accessible at https://66328b6345d576175f4ba136--endearing-gumdrop-b928c0.netlify.app/
