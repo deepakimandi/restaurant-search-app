@@ -40,7 +40,7 @@ export default function ListView(props) {
       ) : props.biz.length === 0 ? (
         <p>No restaurants available nearby!</p>
       ) : (
-        props.biz.map((biz) => <BizCard {...props} biz={biz} />)
+        props.biz.map((biz) => <BizCard key={biz.id} {...props} biz={biz} />)
       )}
     </div>
   );
